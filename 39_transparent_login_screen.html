@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+        <!--Import materialize.css-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css'>
+
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>materialize css</title>
+
+      <style>
+        body{
+          background: url(0_landscape.jpg);
+          background-size: cover;
+          color:#fff;
+        }
+        .login{
+          margin-top:100px;
+        }
+        .login .card{
+          background:rgba(0, 0, 0, 0.6);
+        }
+        .login label{
+          font-size:16px;
+          color:#ccc;
+        }
+        .login input{
+          font-size:20px !important;
+        }
+        .login button:hover{
+          padding:0px 40px;
+        }
+      </style>
+    </head>
+
+    <body>
+
+      <!-- login form -->
+      <div class="row login">
+        <div class="col s10 l4 offset-l4 offset-s1">
+          <div class="card">
+
+            <div class="card-action red">
+              <h3>Login Screen</h3>
+            </div>
+
+            <div class="card-content">
+              <div class="form-field">
+                <label for="username">Username</label>
+                <input type="text" name="username" value="">
+              </div>
+              <div class="form-field">
+                <label for="password">Password</label>
+                <input type="password" name="password" value="">
+              </div>
+              <div class="left" style="margin-left:20px;">
+                <input type="checkbox" id="check">
+                <label for="check">Remember Me</label>
+              </div><br><br>
+              <div class="form-field center-align">
+                <button class="btn btn-medium red">Login</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    </body>
+  </html>

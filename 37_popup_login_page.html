@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+        <!--Import materialize.css-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css'>
+
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>materialize css</title>
+
+      <style>
+        a.btn{
+          margin-top:30%;
+        }
+        input[type="submit"]{
+          width:100%;
+          margin-top:50px;
+        }
+        .modal-close{
+          position:absolute;
+          top:10px;
+          right:10px;
+          margin:0;
+          padding:0;
+        }
+        .left{
+          padding-left:20px;
+        }
+      </style>
+
+    </head>
+
+    <body>
+
+      <div class="container center">
+        <a href="#login" class="btn btn-large teal modal-trigger">Login</a>
+      </div>
+
+      <div class="modal" id="login">
+        <h5 class="modal-close">&#10005;</h5>
+        <h4 class="center-align">login screen</h4>
+
+        <div class="modal-content center">
+          <form  action="index.html" method="post">
+            <div class="input-field">
+              <i class="material-icons prefix">person</i>
+              <input type="text" name="username" value="">
+              <label for="username">Username</label>
+            </div>
+
+            <div class="input-field">
+              <i class="material-icons prefix">lock</i>
+              <input type="password" name="pass" value="">
+              <label for="pass">PassWord</label>
+            </div>
+
+            <div class="left" style="margin-left:20px;">
+              <input type="checkbox" id="check">
+              <label for="check">Remember Me</label>
+            </div>
+
+            <input type="submit" class="btn btn-large" value="Login">
+          </form>
+        </div>
+      </div>
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+      <script>
+          $(document).ready(function(){
+            $('.modal').modal();
+          });
+      </script>
+    </body>
+  </html>
